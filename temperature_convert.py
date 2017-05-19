@@ -22,10 +22,10 @@ def trigger_cb(word, word_eol, userdata):
 def convert(degrees,unit):
 	if isValidInput(degrees) and unit == "!celsius":
 		fahrenheit = int(round((9 * degrees) / 5 + 32))
-		hexchat.command("say " + str(degrees) + "c degrees Celsius equals " + str(fahrenheit) + " degrees fahrenheit.")
+		hexchat.command("say " + str(degrees) + " degrees Celsius equals " + str(fahrenheit) + " degrees fahrenheit.")
 	elif isValidInput(degrees) and unit == "!fahrenheit":
-		celsius = int(round((degree - 32) * 5 / 9))
-		hexchat.command("say " + str(degrees) + "c degrees Fahrenheit equals " + str(celsius) + " degrees celsius.")
+		celsius = int(round((degrees - 32) * 5 / 9))
+		hexchat.command("say " + str(degrees) + " degrees Fahrenheit equals " + str(celsius) + " degrees celsius.")
 	else:
 	    print("Invalid Input for " + unit)
 

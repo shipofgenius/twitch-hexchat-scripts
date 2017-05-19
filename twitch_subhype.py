@@ -12,5 +12,6 @@ def hello_cb(word, word_eol, userdata):
 		if word[1].find(str) != -1:
 			hexchat.command("say !hype cjrChia <3 !SUB HYPE! <3 cjrChia <3 !SUB HYPE! <3 cjrChia <3 !SUB HYPE! <3 cjrChia <3 SUB HYPE <3 cjrChia <3 SUB HYPE <3 cjrChia <3 SUB HYPE <3 cjrChia ")
 
+# Init. Hook all messages. Call #Main. Verify script has loaded
 hexchat.hook_print("Channel Message", hello_cb)		
 print("Script loaded: " + str(datetime.datetime.now()))

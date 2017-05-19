@@ -20,5 +20,14 @@ twitch IRL interactive bit games .pop balloons. chinese checkers
 twitch rpgbot
 
 setup bot in cmhans and matrix
+list of bots to learn
+    1. gifbot
+    2. lachhhtools
+    3. deepbot
+    4. nightbot
+    5. ankhbot
+    6. battleboss
+
+shoutout overlay
 
 	

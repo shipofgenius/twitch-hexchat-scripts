@@ -12,8 +12,8 @@ def message_cb(word, word_eol, userdata):
 def trigger(word):
 	words = word[1].split(" ")
 	i = 0
-	for str in words:
-		if str.lower() == "!wiki":
+	for strng in words:
+		if strng.lower() == "!wiki":
 			print("found !wiki")
 			i = words.index('!wiki')
 			try:

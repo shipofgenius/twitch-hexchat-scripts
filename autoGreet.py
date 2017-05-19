@@ -28,12 +28,6 @@ def hello_cb(word, word_eol, userdata):
 		hexchat.command(random.choice(listGreet))
 	return hexchat.EAT_NONE
 	
-# # Strip color ansi 	
-# #def stripAnsi(s):
-# #	ansi_escape = re.compile("\x03(?:\d{1,2}(?:,\d{1,2})?)?", re.UNICODE)
-# #	reStr = ansi_escape.sub('', s)
-# #	return reStr
-
 # Check if user has messaged the channel yet
 def firstMessage(nick):
 	for usr in listUsers:

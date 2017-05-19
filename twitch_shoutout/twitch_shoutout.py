@@ -64,7 +64,6 @@ def vipInfo(nick):
 def isMod(nick):
 	members = hexchat.get_list("users")
 	for m in members:
-		print(m.prefix)
 		if m.prefix == "@" and m.nick == stripAnsi(nick):
 			print("Found @ AND nick matches")
 			return True
